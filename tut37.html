@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    
+</head>
+<style>
+    body{
+        background-color: rgb(217, 166, 243);
+        text-shadow: 2px 2px 5px rgb(255, 208, 0), 2px 2px 2px rgb(0, 128, 90), 2px 2px 2px rgb(255, 0, 191),2px 2px 1px rgb(182, 0, 238);
+    }
+    #box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+        /* transition-property: background-color, font-size color font-weight rotate height width; */
+
+        transition: all 1s ease-in-out;
+        
+
+
+    }
+    #box:hover{
+        background-color: aqua;
+        font-size: 30px;
+        color: rgb(255, 8, 0);
+        font-weight: bold;
+        height: 800px;
+        width:300px ;
+        border-radius: 80px;
+    }
+
+</style>
+<body>
+    <h4>
+        This is a CSS tutorial
+    </h4>
+    <div class="container">
+        <div id="box">
+        <input type="text" id="type here">
+        </div>
+    </div>
+    
+</body>
+</html>

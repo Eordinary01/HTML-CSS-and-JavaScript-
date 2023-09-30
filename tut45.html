@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid using Media Queries</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'secton section section aside';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: aqua;
+        }
+
+        .container {
+
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'secton section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+    }
+
+    @media only screen and (min-width:300px) and (max-width:500px) {
+        body {
+            background-color: rgb(255, 0, 0);
+        }
+
+        /* h2{
+            width: 500px;
+        } */
+
+        .container {
+
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'secton section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        span {
+            display: block;
+        }
+
+    }
+
+    @media (min-width:500px) and (max-width:800px) {
+        body {
+            background-color: rgb(162, 0, 255);
+        }
+
+        /* h2{
+            width: 600px;
+        } */
+
+        .container {
+
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'secton section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        span {
+            display: block;
+        }
+
+    }
+
+    @media (min-width:800px) {
+        body {
+            background-color: rgb(136, 255, 0);
+        }
+        
+
+        /* h2{
+            width: 500px;
+        } */
+    }
+
+    .bdr {
+        border: 2px solid bisque;
+        padding: 10px 23px;
+        background-color: black;
+        color: aliceblue;
+    }
+
+    nav {
+        grid-area: navbar;
+
+    }
+
+    section {
+        grid-area: section;
+
+    }
+
+    /* h2{
+            width: 1000px;
+        } */
+
+    aside {
+        grid-area: aside;
+
+    }
+
+    footer {
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact US</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+        </section>
+        <aside class="bdr">
+            <h1>Get the information</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright Coder Dost</footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before ans After psuedo selector</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(17, 17, 17);
+            color: rgb(237, 250, 249);
+        }
+        
+        header::before{
+            content: "";
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOoDJqsgn0kN_yysBVihLqvIsfSz7nRF1dcA&usqp=CAU) no-repeat center center/cover;
+            position:absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+
+
+
+        section {
+            height: 320px;
+            
+            margin: 2px 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: url();
+        }
+
+        /*section::before{
+            content: "this is a content"
+        }
+
+        
+        section::after{
+            content: "This is  another content"  
+        }*/
+
+
+        .navigation {
+            font-size: 15px;
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            padding: 10px 23px;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Product</li>
+                <li class="item">Contact us </li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <section>
+            <h1>Welcome to the world of coding</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ea a? Laudantium ea ducimus dolor,
+                sapiente omnis ullam. Eaque sequi veritatis quo eos nostrum hic minus possimus eligendi ipsam
+                distinctio. Nihil corrupti ullam modi.</p>
+        </section>
+        <hr>
+
+</body>
+
+</html>

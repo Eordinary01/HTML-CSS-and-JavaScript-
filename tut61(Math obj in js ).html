@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+    <style>
+        .container{
+            border: 2px solid red;
+        }
+        h1:hover{
+            color: plum;
+            font-size: 2.2rem;
+            font-weight: bold;
+            text-align: center;
+            animation: move 4s ease-in-out infinite;
+
+
+            
+        }
+        @keyframes move{
+            50%{
+                background-color: black;
+                /* clip-path: circle(50%); */
+                /* height: 29vh; */
+                /* width: 100%; */
+                transform: translate(1000px,0px);
+            }
+            100%{
+                background-color: rgb(230, 162, 162);
+                /* clip-path: circle(100%); */
+                /* height: 80vh; */
+                color: black;
+                transform: translate(100px,0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is a math object tutorial </h1>
+    </div>
+    <script>
+
+        // Printing the maths object 
+        let  m =Math;
+        console.log(m);
+
+        // Printing the constants from math object
+        console.log("The value of Math.LN10 is",Math.LN10)
+        console.log("The value of Math.E is",Math.E)
+        console.log("The value of Math.SQRT1_2 is",Math.SQRT1_2)
+        console.log("The value of Math.LOG10E is",Math.LOG10E)
+        console.log("The value of Math.acosh is",Math.acosh)
+        console.log("The value of Math.PI is",Math.PI)
+        
+        
+        // Printing the functiion from math object
+        let a = 75.6969;
+        let b = 85.6969 
+
+        console.log("The value of  a and b is  ", a,b);
+        console.log("The value of  a and b rounded is ", Math.round(a), Math.round(b));
+        console.log("4 raised to the power of 3 is ", Math.pow(4,3));
+        console.log("5 raised to the power of 3 is ", Math.pow(5,3));
+
+        console.log("Square root of 625 is ", Math.sqrt(625));
+
+        // Ceil and Floor 
+        console.log("6.7 rounded up to nearest integer is ", Math.ceil(6.7)); 
+        console.log("6.7 rounded down to nearest integer is ", Math.floor(6.7));
+
+        // Abs Function 
+        console.log("Absolte value of 6.969 is ", Math.abs(6.969))
+        console.log("Absolte value of 6.969 is ", Math.abs(-6.969))
+
+        // Trigonometric Functions 
+        console.log("The value of sin(pi)", Math.sin(Math.PI));
+        console.log("The value of cos(pi/3)", Math.cos(Math.PI/3));
+        console.log("The value of cot(pi/2)", Math.cos(Math.PI/2));
+
+        // Min and Max fuction 
+        console.log("Minimum value of 4, 5 ,6 ,7,9 , 0, ", Math.min(4, 5 ,6 ,7,9 , 0,));
+        console.log("Maximum value of 4, 5 ,6 ,7,9 , 0, ", Math.max(4, 5 ,6 ,7,9 , 0,));
+
+        // Generating a randon number
+        // let r = Math.random();
+        // Random number b/w (a,b) = a + (b-a)*Math.random()
+        let a1 = 51;
+        let b1 = 60;
+        let r1_100 = a1 + (b1-a1)*Math.random(); 
+        console.log("The random number is ", r1_100);  
+
+        
+    </script>
+</body>
+</html>

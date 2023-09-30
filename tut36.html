@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+</head>
+<style>
+    .container{
+        background-color:greenyellow ;
+        
+    }
+    .box1{
+        background-color: violet;
+        width: 265px;
+        height: 265px;
+        position: relative;
+        animation-name: ball-animate;
+        animation-duration: 3s;
+        /*animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-out;*/
+        animation-delay: 1.4s;
+        animation-iteration-count: infinite;
+        
+        animation-fill-mode: alternate;
+
+
+
+        /* animation-direction: reverse; */
+
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+
+
+    }
+
+
+    .box2{
+        background-color: rgb(224, 0, 224);
+        width: 265px;
+        height: 265px;
+        position: relative;
+        animation-name: code2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+
+
+
+    }
+
+    @keyframes code2{
+        0%{
+            top: 0px;
+            left: 0px;
+            width: 50px;
+            
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+            width: 100px;
+            
+        }
+        
+        50%{
+            top:250px;
+            left: 250px;
+            width: 150px;
+            
+            
+        }
+        75%{
+            top: 0px;
+            left: 250px;
+            bottom: 300px;
+            width: 200px;
+            
+        }
+        100%{
+            top: 0px;
+            right: 10px;
+            width: 2000px;
+            
+
+        }
+
+    }
+
+
+    @keyframes ball-animate{
+        from{
+            width: 300px;
+
+        }
+
+        to{
+            width: 2000px;
+
+        }
+
+
+    }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            This is a box
+        </div>
+        <div class="box2">
+            This is another box 
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+            color: hotpink;
+        
+    
+        }
+        span{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight:bold ;
+        }
+    </style>
+</head>
+<body>
+    <h2> This is A HTML forms Tutorial</h2>
+    <p>welcome</p>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="my name" id="name">   
+        </div>
+        <br>
+        <label for="role"> Role </label>
+        <div>
+             <input type="text" name="my role " id="role">
+        </div>
+          <br>
+        <div>
+           Email <input type="email" name="Code email" >
+        </div>
+        <br>
+        <div>
+            Date  <input type="date" value="Date ">
+        </div>
+        <br>
+        
+        <div>
+        Bonus    <input type="number" value=" my bonus">
+        </div>
+       <br>
+       <label for="Are you 18+">Eligible</label>
+       <div>
+        <input type="checkbox" name="Eligiblity Criteria" id="Are you 18+" >
+       </div>
+       <br>
+       <div>
+        My gender: Male<input type="radio" name="My Gender" > Female <input type="radio" name="My Gender" id=""> Other <input type="radio" name="My Gender" id="">
+       </div>
+       <br>
+       <div>
+           Pick One <input type="color" name=" colour choice " id="">
+        </div>
+        <br>
+        <div>
+            write about yourself <textarea name="my text" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="Bike">Choose Bike</label>
+            <select name="My Bike" id="Bike">
+                <option value="Ninja Zx10R">Ninja Zx10R </option>
+                <option value="Suzuki Hayabusa">Suzuki Hayabusa </option>
+                <option value="Ninja H2">Ninja H2</option>
+                <option value="Ducati V6 pagera">Ducati V6 Panigale </option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit now ">
+            <input type="reset" value="reset now">
+        </div>
+        <br>
+       
+
+        
+        
+    </form>
+</body>
+</html>

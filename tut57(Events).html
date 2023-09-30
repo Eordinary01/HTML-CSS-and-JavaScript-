@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<style>
+    #btn ,#heading{
+        padding: 6px 27px;
+        background-color: rgb(17, 17, 17);
+        color: palevioletred;
+        cursor: pointer;
+        border: 2px solid plum;
+        border-radius: 50px;
+    }
+</style>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMcontentLoaded
+
+    Transitionend -->
+    <div class="container">
+        <h1 id="heading">This is my heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, nulla eveniet repellendus obcaecati nesciunt asperiores minus, temporibus ducimus nemo aut fugit voluptate pariatur maiores laborum. Molestias, alias consequatur tempore odit sed atque maiores dolores in ullam sint voluptatem impedit recusandae unde ex aliquid maxime officiis, sunt quis facilis quo! Ipsa, voluptate. Dolorem saepe facere sunt libero obcaecati nihil dolores tempora in error, molestias dicta ut molestiae magni dolorum similique dolore labore consectetur, pariatur, enim accusamus maiores! Ipsa doloremque mollitia ratione esse. Impedit dolores ducimus sit unde esse est et doloribus, quisquam nihil ea placeat consectetur debitis provident sunt eos dolorem?</p>
+    </div>
+    <button id="btn" class="" onclick="togglehide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run(){
+        //     alert('Mouse Inside')
+        
+        // });
+        // para.addEventListener('mouseout', function run(){
+            //     alert('Mouse out')
+            
+        // });
+        para.addEventListener('click', function run(){
+            if(para.style.display !='none'){
+                para.style.display ="none";
+            }
+            else{
+                para.style.display ='display';
+            }
+        });
+        let heading = document.getElementById('heading');
+        // heading.addEventListener('mouseover', function run(){
+        //     alert('Mouse Inside')
+        // });
+        heading.addEventListener('click', function run(){
+        if(heading.style.display !='display'){
+                heading.style.display ="display";
+            }
+            else{
+                heading.style.display ='none';
+            }
+        });
+    
+
+
+        
+
+            
+
+
+
+        function togglehide(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if(para.style.display !='none'){
+                para.style.display ="none";
+            }
+            else{
+                para.style.display ='block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<style>
+    .container{
+        border: 2px solid palevioletred;
+        height: 50vh;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="container">
+        Hello, welcome to my web page 
+    </div>
+    <script>
+        //  Alert in in-bowser JavaScript  :: does not retur anything 
+        // alert("This is an offical govt web page do no try any mischief");
+
+        // Prompt in JS
+        // let name = prompt("What is your name?" ,"Guest");
+        // console.log(name);
+        
+
+        //  Confirm in JS
+        // let deletepost = confirm("Do you really want to delete this post ");
+        // console.log(deletepost);
+
+        // if(deletepost){
+        //     console.log("Your post has been terimnated.");
+
+        // }
+        // else{
+        //     console.log("Your post has not been terminated ");
+        // }
+
+
+        let age = prompt(" Type your age", "");
+        console.log(age);
+        
+
+        if(age>=18){
+            console.log("Most welcome your are eligible to use this webpage");
+        }
+        else{
+            console.log("You are not authorise to visit this webpage");
+        }
+
+
+
+        // let num = prompt("Find your desire num");
+        // num = Number.parseInt(num);
+        // if(num % 2 ==0 ) {
+        //     console.log("The number  is divisible by 2");
+        // }
+        // else{
+        //     console.log("Your num is not divisible by 2")
+        // }
+
+        // let num = prompt("Enter number to find multiplictaion table");
+        // num = Number.parseInt(num);
+        // for(i =1; i<=10; i++){
+
+        //     const result = i * num;
+        //     console.log(`${num} * ${i} = ${result}`);
+        // }
+
+           /* for (i =1; i<=100; i++){
+                if(i % 2 ==0){
+                    console.log(i);
+
+                }
+            }
+            */
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <style>
+        ul li{
+            list-style: none;
+            font-size: 10px;
+        }
+       ul li a{
+            position: relative;
+            font-size: 1.2rem;
+            color: rgb(32, 165, 218);
+            font-weight: bolder;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+           
+        }
+       ul li  a::before{
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            height: 5px;
+            width: 0;
+            background: #4070f4;
+            border-radius: 45px;
+            transition: width 1s ease-in-out;
+        }
+        a:hover::before{
+            width: 100%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li>
+                    <a href="#">Welcome</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+</body>
+</html>
